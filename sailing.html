@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Fleet Website</title>
+<!---------style.css-------->
+    <link rel="stylesheet" href="assets/style.css">
+<!---------sail.css-------->
+    <link rel="stylesheet" href="assets/sail.css">
+<!---------bootstrap-------->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!---------remix.icon-------->
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    
+     <!----------nav banner start------->
+     <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links">
+                <i class="fa fa-times-circle" ></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sailing.html">Sailing</a></li>
+                    <li><a href="luxury.html">Luxury</a></li>
+                    <li><a href="fishing.html">Fishing</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Explore Our Marina Fleet Sailing Page</h1>
+            <p>Experience luxuary and adventure with Marina Fleet.Offering premium sailing,<br>fishing and cruising for unforgettable ocean journeys.</p>
+            <button>Visit Us To Know More</button>
+        </div>
+    </section>
+  <!----------nav banner end--------->
+ 
+
+<div class="container">
+  <!--------- Left Sidebar ---------->
+  <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+          <li>Luxury Yachts</li>
+          <li>Fishing Boats</li>
+          <li>Sailing Boats</li>
+          <li>Speed Boats</li>
+          <li>Cruisers</li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Customer Reviews</h2>
+      <div class="reviews">
+          <p>"Amazing boats and great service!" - John</p>
+          <p>"Highly recommended for sailing lovers!" - Sarah</p>
+          <p>"Fast delivery and excellent quality!" - Mike</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <h3>Apply Discount:</h3>
+      <select id="discount">
+          <option value="0">No Discount</option>
+          <option value="5">5%</option>
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <br>
+ <!---------total prices-------->
+      <h2>Shopping Cart</h2>
+    <div id="cart"></div>
+    <div id="cart-total">
+        <p>Total: $<span id="total-price">0.00</span></p>
+    </div>
+  </aside>
+  <!--------- Left Sidebar ---------->
+
+
+  <!--------- Right Side ------------>
+  <main class="fleet" style="justify-content: center;">
+      <h1 style="text-decoration: underline;">Marina Fleet for Sale</h1>
+      <br>
+      <br>
+      <br>
+  
+      <div class="fleet-container">
+          <div class="item" data-price="100000">
+              <img src="images/2.jpeg" alt="Luxury Yacht">
+              <h3>Luxury Yacht</h3>
+              <p>Price: $100,000</p>
+              <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)" style="background-color: green;width: 50%;">Add to Cart </button>
+          </div>
+
+          <div class="item" data-price="75000">
+              <img src="images/3.jpeg" alt="Fishing Boat">
+              <h3>Fishing Boat</h3>
+              <p>Price: $75,000</p>
+              <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)" style="background-color: green;width: 50%; ">Add to Cart</button>
+          </div>
+
+          <div class="item" data-price="85000">
+              <img src="images/5.jpeg" alt="Sailing Boat">
+              <h3>Sailing Boat</h3>
+              <p>Price: $85,000</p>
+              <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)" style="background-color: green;width: 50%;">Add to Cart</button>
+          </div>
+
+          <div class="item" data-price="95000">
+              <img src="images/1.jpeg" alt="Speed Boat">
+              <h3>Speed Boat</h3>
+              <p>Price: $95,000</p>
+              <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)"style="background-color: green;width: 50%;">Add to Cart</button>
+          </div>
+
+          <div class="item" data-price="120000">
+              <img src="images/4.jpeg" alt="Cruiser">
+              <h3>Cruiser</h3>
+              <p>Price: $120,000</p>
+              <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)"style="background-color: green;width: 50%;">Add to Cart</button>
+          </div>
+
+          <div class="item" data-price="120000">
+              <img src="images/6.jpeg" alt="Cruiser">
+              <h3>Sailing Boat</h3>
+              <p>Price: $120,000</p>
+              <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)"style="background-color: green;width: 50%;">Add to Cart</button>
+          </div>
+
+
+        <div class="item" data-price="120000">
+          <img src="images/7.jpeg" alt="Cruiser">
+          <h3>Cruiser</h3>
+          <p>Price: $120,000</p>
+          <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)" style="background-color: green;width: 50%;">Add to Cart</button>
+        </div>
+
+       <div class="item" data-price="120000">
+        <img src="images/8.jpeg" alt="Cruiser">
+        <h3>Speed Boat</h3>
+        <p>Price: $120,000</p>
+        <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)" style="background-color: green;width: 50%;">Add to Cart</button>
+      </div>
+
+     <div class="item" data-price="120000">
+      <img src="images/9.jpeg" alt="Cruiser">
+      <h3>Speed Boat</h3>
+      <p>Price: $120,000</p>
+      <button class="add-to-cart" onclick="addToCart('Product 1', 25.00)" style="background-color: green;width: 50%;">Add to Cart</button>
+  </div>
+</main>
+</div>
+<!--------- Right Side ------------>
+
+
+<!-- footer start----------->
+<footer class="animated lightSpeedIn" id="footer">
+  <div class="footer-top">
+  <div class="container">
+   <div class="row">
+     <div class="col-lg-3 col-md-6 footer-info">
+       <h3 style="color: rgb(130, 197, 252);">Marina-Fleet</h3>
+    <p>The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and defensive maritime employment.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4 style="color:rgb(130, 197, 252);";>Useful Links</h4>
+        <ul>
+          <li> <a href='/'>Home</a></li>
+          <li><i class="ion-ios-arrow-right"></i> <a href='/html/aboutus'>About Us</a></li>
+          <li><i class="ion-ios-arrow-right"></i> <a href='/html/contactus'>contact Us</a></li>
+          <li><i class="ion-ios-arrow-right"></i> <a href='/html/sitemap'>Site Map</a></li>
+          <li><i class="ion-ios-arrow-right"></i> <a href='/html/feedback'>Feedback</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h4 style="color:rgb(130, 197, 252);">Contact Us</h4>
+    <p>
+      APWA Complex, 1st Floor,<br>
+      Agha Khan 3 Rd, Garden East,<br>
+      Saddar Town, Karachi<br>
+      <strong>Phone:</strong> +92 5589 55488 5<br>
+      <strong>Email:</strong> info@aptechgdn.net<br>
+    </p>
+        <div class="social-links">
+          <a href="https://twitter.com/asad80400783" class="twitter"><i class="ri-twitter-fill"></i></a>
+          <a href="https://www.facebook.com/asad.bandhani.3" class="facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/babupreedy/" class="instagram"><i class="ri-instagram-fill"></i></a>
+          <a href="https://aboutme.google.com/u/0/?referer=gplus" class="google-plus"><i class="ri-mail-fill"></i></i></a>
+          <a href="https://www.linkedin.com/in/asad-ashraf-73aa38185/" class="linkedin"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 footer-newsletter">
+        <h4 style="color: rgb(130, 197, 252);">Our Newsletter</h4>
+        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+        <form action="" method="post">
+          <input type="email" name="email"><input type="submit" class="hover-sub" value="Subscribe" style="color: rgb(46, 78, 105);";>
+        </form>
+      </div>
+    </div>
+   </div>
+  </div>
+  <div class="container" style="text-align: center;">
+    <div class="copyright">
+      &copy; Copyright <strong>Marina-Fleet</strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="http://Marina-Fleet.com.pk/">Marina Fleet</a>
+    </div>
+  </div>
+  </footer>
+  <!-------footer end----------->
+
+<!------java.js-------->
+<script src="assets/java.js"></script>
+<!---------bootstrap------------>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
